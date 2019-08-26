@@ -26,12 +26,14 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import requests
+import os
 
 # Update to match your API key
-API_KEY = '3c3gRvzx7uGfMYEnWKvF'
+API_KEY = os.environ['PAGERDUTY_TOKEN']
 
 # Update to match the schedule ID
-SCHEDULE_ID = 'PJGJ9RZ'
+SCHEDULE_ID = os.environ['PAGERDUTY_SCHEDULE_ID']
+
 
 # Update to match your chosen parameters
 SINCE = ''
